@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoxTech Stylized Calculator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="header">
+    <img src="{{ url_for('static', filename='fox-fluent-512.png') }}" alt="Fox Icon" class="fox-icon" />
+    <h1>FoxTech Stylized Calculator</h1>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="calculator glass">
+        <form name="calc" onsubmit="return false">
+          <div class="display">
+            <input type="text" name="display" id="display" readonly />
+          </div>
+          <div class="buttons">
+            <button type="button" onclick="clearDisplay()">AC</button>
+            <button type="button" onclick="deleteLast()">DE</button>
+            <button type="button" onclick="appendToDisplay('.')">.</button>
+            <button type="button" onclick="appendToDisplay('/')">/</button>
+
+            <button type="button" onclick="appendToDisplay('7')">7</button>
+            <button type="button" onclick="appendToDisplay('8')">8</button>
+            <button type="button" onclick="appendToDisplay('9')">9</button>
+            <button type="button" onclick="appendToDisplay('*')">*</button>
+
+            <button type="button" onclick="appendToDisplay('4')">4</button>
+            <button type="button" onclick="appendToDisplay('5')">5</button>
+            <button type="button" onclick="appendToDisplay('6')">6</button>
+            <button type="button" onclick="appendToDisplay('-')">-</button>
+
+            <button type="button" onclick="appendToDisplay('1')">1</button>
+            <button type="button" onclick="appendToDisplay('2')">2</button>
+            <button type="button" onclick="appendToDisplay('3')">3</button>
+            <button type="button" onclick="appendToDisplay('+')">+</button>
+
+            <button type="button" onclick="appendToDisplay('00')">00</button>
+            <button type="button" onclick="appendToDisplay('0')">0</button>
+            <button type="button" onclick="calculate()" id="fox-btn">=</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <audio id="click-sound" src="{{ url_for('static', filename='single-mouse-button-click-351381.mp3') }}"></audio>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
