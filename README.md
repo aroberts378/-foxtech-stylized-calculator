@@ -4,8 +4,8 @@ A playful, responsive calculator built with HTML, CSS, and a sprinkle of Python 
 
 ## 🌐 Live Demo
 
-> [View it here!](https:webpage-here.github.dev/)  
-> *(Hosted locally during development or deploy to Netlify/Vercel for production.)*
+> [View it here!](https://foxtech-stylized-calculator.onrender.com)" />
+> *(Hosted locally during development or deploy to Render for production.)*
 
 ---
 
